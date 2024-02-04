@@ -1,0 +1,821 @@
+<!Doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title> Netflix clone</title>
+
+<style type="text/css">
+    
+*{
+margin:0;
+padding:0;
+font-family:'Poppins,sans-serif;
+box-sizing:border-box;
+}
+
+body
+{
+background:#000;
+color:#fff;
+}
+
+.header{
+width:100%;
+height:100vh;
+background-image:url('netflix1.jpg');
+text-align:center;
+
+background-size:cover;
+background-position:center;
+padding:10px 10%;
+position:relative;
+}
+nav {
+display:flex;
+align-items:centre;
+justify-content:space-between;
+padding:10px 0;
+
+}
+.logo{
+width:150px;
+cursor:poniter;
+}
+nav button{
+border:0;
+outline:0;
+background:#db0001;
+color:#fff;
+padding:7px 20px;
+font-size:15px;
+border-radius:4px;
+margin-left:10px;
+cursor:pointer;
+}
+.language-btn{
+display:inline-flex;
+align-items:center;
+background:transparent;
+border:1px solid #fff;
+padding:7px 10px;
+}
+.language-btn img
+{
+width:10px;
+margin-left:10px;
+
+}
+.header-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+margin-top:100px;
+}
+.header-content h1{
+font-size:60px;
+line-height:70px;
+font-weight:600;
+max-width:650px;
+}
+.header-content h3{
+font-weight:400;
+margin-buttom:20px;
+}
+.email-signup{
+background:#fff;
+border-radius:4px;
+display:flex;
+align-items:center;
+margin-top:30px;
+overflow:hidden;
+}
+.email-signup input{
+flex:1;
+border:0;
+outline:0;
+margin-left:20px;
+}
+.email-signup button{
+background:#db0001;
+border:0;
+outline:0;
+color:#fff;
+font-size:16px;
+cursor:pointer;
+padding:15px 30px ;
+}
+.features{
+padding:50px 10%;
+font-size:18px;
+}
+.row{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:40px 0; 
+}
+.row{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.text-col{
+flex-basic:50%;
+margin-button:20px;
+}
+.img-col{
+flex-basic:50%;
+margin-bottom:20px;
+}
+.img-col img{
+display:block;
+width:100%;
+margin:auto;
+}
+.features{
+padding:50px 12%;
+font-size:18px;
+}
+.col{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.col{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.text-col{
+flex-basic:50%;
+margin-button:20px;
+}
+.img-col{
+flex-basic:50%;
+margin-bottom:20px;
+}
+.img-col img{
+display:block;
+width:90%;
+margin:auto;
+}
+.features{
+padding:50px 10%;
+font-size:18px;
+}
+.col{
+display:flex;
+width:100%;
+align-items:centre;
+flex-wrap:wrap;
+padding:40px 0; 
+}
+.col{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.text-col{
+flex-basic:50%;
+margin-button:20px;
+}
+.img-col{
+flex-basic:50%;
+margin-bottom:20px;
+}
+.img-col img{
+display:block;
+width:100%;
+margin:auto;
+}
+
+
+.features{
+padding:50px 10%;
+font-size:18px;
+}
+.row{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:40px 0; 
+}
+.row{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.text-col{
+flex-basic:50%;
+margin-button:20px;
+}
+.img-col{
+flex-basic:50%;
+margin-bottom:20px;
+}
+.img-col img{
+display:block;
+width:100%;
+margin:auto;
+}
+.features{
+padding:50px 12%;
+font-size:18px;
+}
+.col{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.col{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.text-col{
+flex-basic:50%;
+margin-button:20px;
+}
+.img-col{
+flex-basic:50%;
+margin-bottom:20px;
+}
+.img-col img{
+display:block;
+width:90%;
+margin:auto;
+}
+.features{
+padding:50px 10%;
+font-size:18px;
+}
+.col{
+display:flex;
+width:100%;
+align-items:centre;
+flex-wrap:wrap;
+padding:40px 0; 
+}
+.col{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.text-col{
+flex-basic:50%;
+margin-button:20px;
+}
+.img-col{
+flex-basic:50%;
+margin-bottom:20px;
+}
+.img-col img{
+display:block;
+width:100%;
+margin:auto;
+}
+.features{
+padding:50px 10%;
+font-size:18px;
+}
+.row{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:40px 0; 
+}
+.row{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.text-col{
+flex-basic:50%;
+margin-button:20px;
+}
+.img-col{
+flex-basic:50%;
+margin-bottom:20px;
+}
+.img-col img{
+display:block;
+width:100%;
+margin:auto;
+}
+.features{
+padding:50px 12%;
+font-size:18px;
+}
+.col{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.col{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.text-col{
+flex-basic:50%;
+margin-button:20px;
+}
+.img-col{
+flex-basic:50%;
+margin-bottom:20px;
+}
+.img-col img{
+display:block;
+width:90%;
+margin:auto;
+}
+.features{
+padding:50px 10%;
+font-size:18px;
+}
+.col{
+display:flex;
+width:100%;
+align-items:centre;
+flex-wrap:wrap;
+padding:40px 0; 
+}
+.col{
+display:flex;
+width:100%;
+align-items:center;
+flex-wrap:wrap;
+padding:50px 0; 
+}
+.text-col{
+flex-basic:50%;
+margin-button:20px;
+}
+.img-col{
+flex-basic:50%;
+margin-bottom:20px;
+}
+.img-col img{
+display:block;
+width:100%;
+margin:auto;
+}
+
+
+.faq h2{
+font-weight:500;
+font-size:40px;
+}
+.accordion{
+margin:60px auto;
+width:100%;
+max-width:750px;
+}
+.accordion li{
+list-style:none;
+width:100%;
+padding:5px;
+}
+.accordion li label{
+display:flex;
+align-items:center;
+padding:20px;
+font-size:18px;
+font-weight:500;
+background:#303030;
+margin-bottom:2px;
+cursor:pointer;
+position:relative;
+}
+label::after{
+content:'+';
+font-size:34px;
+position:absolute;
+right:25px;
+}
+input[type="radio"]{
+display:none;
+}
+.accordion .content{
+background:#303030;
+text-align:left;
+padding:0 20px;
+max-height:0;
+overflow:hidden;
+transition:max-height 0.3s,padding 0.3s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+max-height:500px;
+padding:25px 25px;
+}
+
+.accordion input[type="radio"]:checked +label::after{
+transform:rotate(120deg);
+}
+.faq .email-signup{
+align:center;
+max-width:500px;
+margin:20px auto 65px;
+}
+.faq small{
+
+font-size:15px;
+}
+.footer{
+padding:50px 15% 10px;
+border-top:6px solid #333;
+color:#777;
+}
+
+.footer h2{
+font-size:18px;
+font-weight:400;
+margin-bottom:35px;
+}
+.footer .col{
+flex-basis:25%
+flex-grow:1;
+margin-bottom:20px;
+}
+.footer .col a{
+display:block;
+text-decoration:none;
+color:#777;
+font-size:14px;
+margin-bottom:10px;
+}
+.footer .row{
+align-items:flex-start;
+padding:10px 0;
+}
+.footer .language-btn{
+color:#fff;
+padding:10px 20px;
+border-radius:4px;
+}
+
+.copyright-txt{
+font-size:14px;
+margin-top:20px;
+margin-buttom:10px;
+}
+@media only screen and (max-width:700px){
+
+.logo{
+width:100px;
+}
+nav button{
+padding:7px 12px;
+nav .language-btn{
+padding:5px 11px;
+}
+.header-content{
+position:unset;
+transform:none;
+padding-top:150px;
+}
+.header-content h1{
+font-size:35px;
+}
+.email-signup button{
+font-size:15px;
+padding:15px 20px;
+}
+.text-col, .img-col{
+flex-basis:100%;
+}
+.features h2{
+font-size:35px;
+}
+.features p{
+font-size:20px;
+}
+.row:nth-child(2), .row:nth-child(4){
+flex-direction:column-reverse;
+}
+.features .row{
+padding:10px 0;
+}
+.faq h2 {
+font-size:25px;
+}
+
+.accordion .content{
+font-size:16px;
+}
+.accordion li label{
+padding:15px;
+font-size:20px;
+}
+label::after{
+font-size:25px;
+}
+
+</style>
+</head>
+<body>
+</style>
+</head>
+<body>
+    <img src="111.jpeg" alt="Paris" width="170" height="100">
+    
+ <nav>
+<div >
+<button  class="language-btn" >English</button>
+
+<button > Sign</button>
+</div>
+</nav>
+
+<div class="header"></div>
+<div class="header-content">
+<h1> Unlimited movies,Tv shows and more.</h1>
+<h3> Watch anywhere.Cancel anytime.</h3><br>
+<p> Ready to watch? Enter your email to create or restart your membership.</p>
+<form class="email-signup">
+<input type="email" placeholder="Email address" required>
+<button type="submit">Get Started</button>
+</form>
+
+</div>
+<div class="features">
+<div class="row>
+<div class="test-col">
+<h2>Create profiles for kids.</h2>
+<p> Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+</div>
+<div class="img-col">
+<img src="children.png">
+<a href=https://www.bing.com/videos/search?q=Create+profiles+for+kids+episode+1+netflix&docid=603519729204070278&mid=2ADB6432812A8CE6AD652ADB6432812A8CE6AD65&view=detail&FORM=VIRE align="right">Create profiles for kids.</a>
+
+</div>
+</div><br>
+<div class="features">
+<div class="col">
+<div class="test-col">
+<h2>Pokémon Detective Pikachu</h2>
+<p>In a world where humans and Pokémon coexist, an electrifying supersleuth teams with his missing partner's son to crack the case of his disappearance.
+</p>
+</div><br>
+<div class="img-row"><br>
+<img src="pikachu.jpg">
+<a href="https://www.justwatch.com/in/movie/pokemon-detective-pikachu" align="right">Pokémon Detective Pikachu</a>
+
+</div>
+</div>
+</div>
+
+
+<div class="features">
+<div class="col">
+<div class="test-col">
+<h2>Motu Patlu in the City of Gold.</h2>
+<p>Defeated by the strong yet naive Motu in a race, an evil horseback rider challenges him to a more dangerous mission: finding a lost city of treasure!</p><br><br>
+</div>
+<div class="img-col">
+<img src="motu.jpg">
+<a href=https://www.dailymotion.com/video/x8iuvmw align="right">Motu Patlu in the City of Gold.</a>
+
+</div>
+</div>
+</div>
+
+
+<div class="features">
+<div class="row">
+<div class="test-row">
+<h2>Mighty Little Bheem</h2>
+<p>An innocent toddler’s boundless curiosity -- and extraordinary might lead to mischief and adventure in his small Indian town.
+</p><br>
+</div>
+<div class="img-col">
+<img src="chotabheem.jpg" alt="Paris" width="300" height="300">
+<a href=https://www.bing.com/videos/search?q=mighty+little+bheem+full+episodes+1&qpvt=mighty+little+bheem+full+episodes+1&view=detail&mid=1F3C01F241004F004B861F3C01F241004F004B86&&FORM=VRDGAR align="right">Mighty Little Bheem.</a>
+
+</div>
+
+
+<div class="features">
+<div class="row">
+<div class="test-row">
+<h2>CoComelon</h2>
+<p>Learn letters, numbers, animal sounds and more with JJ in this musical series that brings fun times with nursery rhymes for the whole family!.
+</p><br>
+</div>
+
+
+<div class="img-col">
+<img src="coco.jpg"  width="350" height="360">
+<a href= https://www.bing.com/videos/search?q=CoComelon+full+epsispde+1&qpvt=CoComelon+full+epsispde+1&view=detail&mid=8AB3E85034E86BCF1CB08AB3E85034E86BCF1CB0&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DCoComelon%2Bfull%2Bepsispde%2B1%26qpvt%3DCoComelon%2Bfull%2Bepsispde%2B1%26FORM%3DVDRE align="right">CoComelon.</a>
+
+</div>
+</div>
+</div>
+<div class="features">
+<div class="row">
+<div class="test-row">
+<h2>Masha and the Bear</h2>
+<p>Lively little Masha lives near the forest, where she has wonderful adventures with her best friend — a bear who used to be in the circus.
+</p><br>
+</div>
+<div class="img-col">
+<img src="masha.jpg" alt="Paris" width="400" height="400">
+<a href= https://www.bing.com/videos/search?q=Masha+and+the+Bear+epsisode+1&qpvt=Masha+and+the+Bear+epsisode+1&view=detail&mid=73BFE1249962771961C573BFE1249962771961C5&&FORM=VRDGAR align="right">Masha and the Bear</a>
+
+</div>
+
+
+<div class="features">
+<div class="row">
+<div class="test-row">
+<h2>Word Party Songs</h2>
+<p>Sing along and dance with Bailey, Franny, Kip, Lulu and Tilly in this collection of music videos that will get you in the mood to move and groove!
+</p>
+<br>
+</div>
+
+
+<div class="img-col">
+<img src="word.jpg" alt="Paris" width="350" height="360" align="right">
+<a href= https://www.bing.com/videos/search?q=Word+Party+Songs+epsisode+1&&view=detail&mid=30D9ACC07077BEBBFFF030D9ACC07077BEBBFFF0&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DWord%2BParty%2BSongs%2Bepsisode%2B1%26FORM%3DHDRSC4 align="right">Word Party Songs.</a>
+
+
+</div>
+<div class="features">
+<div class="row">
+<div class="test-row">
+<h2>Pokémon the Movie: Secrets of the Jungle</h2>
+<p>Koko grows up in the jungle with a solitary Zarude. When he meets Ash and Pikachu, he discovers the human world — and a plot threatening his home!
+</p>
+<br>
+</div>
+<div class="img-col">
+<img src="pokemon.jpg">
+<a href =https://www.dailymotion.com/video/x8lrzwcalign="right">Pokémon the Movie: Secrets of the Jungle.</a>
+</div>
+ 
+ <div class="features">
+<div class="row">
+<div class="test-row">
+<h2>Taarak Mehta Ka Ooltah Chashmah</h2>
+<p>Taarak Mehta Ka Ooltah Chashmah is a SAB Comedy Show inspired from the famous humorous column, Duniya Ne Undha Chashmah written by the eminent Gujarati writer, Mr. Tarak Mehta. This show revolves around Gada family which consists of uneducated businessman, Jethalal Champaklal Gada, Jethalal's wife, Daya & their naughty son, Tipendra Gada living in Gokuldham Co-operative Society and covers topical issues which are socially relevant. This hilarious show will surely tickle your funny bone.
+</p>
+
+<br>
+</div>
+<div class="img-col">
+<img src="talak.webp">
+<a href = https://www.sonyliv.com/shows/taarak-mehta-ka-ooltah-chashmah-1700000084 argin="right">Taarak Mehta Ka Ooltah Chashmah.</a>
+</div>
+ 
+
+ <div class="features">
+<div class="row">
+<div class="test-row">
+<h2>Baalveer S1,S2,S3</h2>
+<p>Taarak Mehta Ka Ooltah Chashmah is a SAB Comedy Show inspired from the famous humorous column, Duniya Ne Undha Chashmah written by the eminent Gujarati writer, Mr. Tarak Mehta. This show revolves around Gada family which consists of uneducated businessman, Jethalal Champaklal Gada, Jethalal's wife, Daya & their naughty son, Tipendra Gada living in Gokuldham Co-operative Society and covers topical issues which are socially relevant. This hilarious show will surely tickle your funny bone.
+</p>
+
+<br>
+</div>
+<div class="img-col">
+<img src="balveer.jpg">
+<a href =https://www.sonyliv.com/shows/baalveer-s3-1700000071 argin="right">Baalveer</a>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="faq">
+<h2 align="center"> Frequently Asked Questions</h2>
+<ul class="accordion">
+<li> 
+<input type="radio" name="accordion" id="first">
+<label for="first">What is Netflix?</label>
+<div class="content">
+<p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies without commercials on an internet-connected device. You can also download TV shows and movies to your iOS, Android, or Windows 10 device and watch without an internet connection.
+</p>
+</div>
+</li>
+<li>
+<input type="radio" name="accordion" id="second">
+<label for="second">How much does Netflix cost?</label>
+<div class="content">
+<p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+</p>
+</div>
+</li>
+<li>
+<input type="radio" name="accordion" id="third">
+<label for="third">Where I can watch?</label>
+<div class="content">
+<p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+<p>You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+</p>
+<p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+
+</div>
+</li>
+<li>
+<input type="radio" name="accordion" id="four">
+<label for="four">How do i cancel?</label>
+<div class="content">
+<p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+</p>
+</div>
+</li>
+<li>
+<input type="radio" name="accordion" id="five">
+<label for="five">What can i watch on Netflix?</label>
+<div class="content">
+<p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+
+</p>
+</div>
+</li>
+<li>
+<input type="radio" name="accordion" id="sixth">
+<label for="sixth">Is Netflix good for kinds?</label>
+<div class="content">
+<p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+</p>
+<p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+
+</div>
+</li>
+
+
+</ul>
+<h3 align="center"> Ready to watch? Enter your email to create or restart your membership.</h3>
+<form class="email-signup">
+<input type="email" placeholder="Email address" required>
+<button type="submit">Get Started</button>
+</form>
+</div>
+<div class="footer">
+<h3>Questions? call 000-000-000-000</h3>
+<div class="row">
+<div class="col">
+<a href="#" align="left"> FAQ</a>
+<a href="#"> Investor Relations</a>
+<a href="#"> Privacy</a>
+<a href="#"> Speed Test</a>
+
+</div>
+<div class="col">
+<a href="#" align="left"> Help Center</a>
+<a href="#">Jobs</a>
+<a href="#">Cookies</a>
+<a href="#" align="right"> Legal Notices</a>
+
+</div>
+<div class="col">
+<a href="#" align="right"> Account</a>
+<a href="#" align="right">Ways to watch</a>
+<a href="#" align="right">Corporate Information</a>
+<a href="#"> Only on Netflix</a>
+</div>
+</div>
+<div class="col">
+<a href="#"> Media Center</a>
+<a href="#">Terms of Use</a>
+<a href="#">Corporate Information</a>
+<a href="#"> Only on Netflix</a>
+
+</div>
+</div>
+<button class="language-btn">English</button>
+<p class="copyright-txt">Netflix India</p>
+</div>
+</body>
+</html>
